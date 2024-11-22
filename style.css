@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav{
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+}
+
+
+
+.contenedor{
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+}
+.zona-uno{
+    padding: 220px 0px 120px 0px;
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    height: 100vh;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.new-class{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    transition-duration: .5s;
+    padding: 50px;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230616/pngtree-faceted-abstract-background-in-3d-with-shimmering-iridescent-metallic-texture-of-image_3603748.jpg");
+    object-fit: cover;
+}
+
+.convocatorias{
+    margin-bottom: 80px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.botones{
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.cul-3{
+    padding: 200px 0px 200px 0px;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(54,204,215,1) 67%, rgba(0,212,255,1) 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 100vh
+
+ 
+   
+}
+
+.p-galeria{
+    margin-bottom: 50px;
+}
+
+.galeria{
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(18,15,131,1) 67%, rgba(0,212,255,1) 100%);
+    color: white;
+    font-family: arial;
+    height: 110vh
+    
+}
+
+button{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(0, 27, 78);
+    color: white;
+    transition: 0.4s;
+}
+
+button:hover{
+    background: rgb(45, 102, 207);
+    transform: scale(1.1);
+}
+.nombre{
+    color: #ffffff;
+}
+
+.titulo-uno{
+    font-size: 70px;
+    color: rgb(9, 53, 148);
+}
+
+.praf{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+.titulo-importante{
+    padding: 100px 0px 100px 0px;
+    height: 100vh;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    width: 60px;
+}
+
+.menu{
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 250px;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.menu.navbar ul li{
+    position: relative;
+    float: left;
+
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    display: block;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+ 
+}
+
+.contacto{
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 250px;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(18,15,131,1) 67%, rgba(0,212,255,1) 100%);
+    color: rgb(255, 255, 255);
+
+    
+
+
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+
+}
+
+.menu-links{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    align-items: center;
+}
+
+.link{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media(max-width:901px){
+    .menu{
+        padding: 30px;
+
+    }
+    .menu label{
+        display: initial;
+    }
+    .back{
+        padding: 40px 0;
+    
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        background-color:#2a5298
+        
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+}
